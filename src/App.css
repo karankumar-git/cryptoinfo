@@ -1,9 +1,9 @@
 
 :root{
-    --text-primary:#2C3333;
+    --text-primary:#8ea3a3;
     --bgPrimary:#395B64;
    --bgSecondary: #A5C9CA;
-   --pink: #A5C9CA;
+   --pink: #1f3233;
    --light-blue: #395B64;
    --border: #d9d9d9;
 }
@@ -44,7 +44,9 @@ a:hover{
     margin: 0px;
     background-color: rgb(0, 21, 41);
 }
-
+.mobile{
+    visibility: hidden;
+}
 .logo-container{
     background-color: #001529;
     display: flex;
@@ -93,7 +95,7 @@ a:hover{
     }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:900px){
     .app{
         flex-direction: column;
         overflow: hidden;
@@ -132,8 +134,20 @@ a:hover{
     .show-more{
         font-size: 1.3rem !important;
     }
+    .mobile{
+        visibility: visible;
+        position: absolute;
+        right : 20px;
+    }
+    .laptop{
+        visibility: hidden;
+    }
 }
-
+@media screen and (max-width:320px){
+    .logo{
+        visibility: hidden;
+    }
+}
 .coin-detail-container{
     margin: 30px;
 }
