@@ -2,8 +2,7 @@ import React from 'react'
 import { Menu, Typography, Avatar } from "antd";
 import { Link } from 'react-router-dom';
 import { HomeOutlined, BulbOutlined, FundOutlined,MenuOutlined } from '@ant-design/icons';
-import { DownOutlined } from '@ant-design/icons';
-import { Dropdown, Space } from 'antd';
+import { Dropdown} from 'antd';
 import icon from "../images/icon.png";
 
 const menu = (
@@ -49,7 +48,7 @@ const Navbar = () => {
                 </Typography.Title>
                 <div className="mobile">
                     <Dropdown overlay={menu} trigger={['click']}>
-                        <a onClick={e => e.preventDefault()}>
+                        <a href onClick={e => e.preventDefault()}>
                             <MenuOutlined style={{ fontSize: '32px', textAlign:"right" } }/>
                         </a>
                     </Dropdown>
